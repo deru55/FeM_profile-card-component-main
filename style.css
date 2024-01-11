@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family-default: "Kumbh Sans", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+  --clr-primary-1: hsl(185, 75%, 39%);
+  --clr-primary-2: hsl(229, 23%, 23%);
+  --clr-primary-3: hsl(227, 10%, 46%);
+  --clr-neutral-1: hsl(0, 0%, 59%);
+}
+
+svg,
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.125rem; /* 18px */
+  font-weight: var(--fw-400);
+  text-align: center;
+  line-height: 1.6;
+  font-family: var(--font-family-default);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/bg-pattern-top.svg) top -20rem left -20rem no-repeat,
+    url(images/bg-pattern-bottom.svg) bottom -20rem right -20rem no-repeat;
+  background-color: var(--clr-primary-1);
+  color: var(--clr-neutral-1);
+}
+
+.card-container {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-content {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.ccontainer-top-section {
+  position: relative;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: 0.5rem solid hsl(0, 0%, 100%);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ccontent-top-section {
+  padding: 4.5rem 0 1.5rem;
+}
+
+.ccontent-bottom-section {
+  padding: 1.5rem;
+  border-top: 0.1rem solid lightgray;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.ccontent-bottom-section span {
+  display: block;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fw-bold {
+  font-weight: var(--fw-700);
+  color: var(--clr-primary-2);
+  font-size: 1.125rem;
+}
+
+.country {
+  font-size: 0.925rem;
+}
